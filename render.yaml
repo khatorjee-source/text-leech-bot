@@ -4,9 +4,10 @@ services:
     plan: free
     env: docker
     dockerfilePath: Dockerfile
-    repo: https://github.com/khatorjee-source/text-leech-bot
+    repo: https://github.com
     branch: main
     autoDeploy: false
+    startCommand: python3 -m modules.bot
     envVars:
       - key: BOT_TOKEN
         sync: false
